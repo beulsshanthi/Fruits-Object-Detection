@@ -5,7 +5,7 @@ import cv2
 
 model=YOLO("best.pt")
 
-image_paths=glob.glob(r"C:\Users\Iswarya\Downloads\visual_samples\*.jpg")
+image_paths=glob.glob(r"F:\Fruits Object Detection\Fruits images\*.jpg")
 
 plt.figure(figsize=(20,10))
 
@@ -19,4 +19,5 @@ for i,image in enumerate(image_paths[:4]):
     plt.axis("off")
 
 plt.tight_layout()
+
 plt.show()
